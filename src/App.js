@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Redirect, Route } from 'react-router-dom';
+import React from 'react';
+import UseStateSplit from './pages/UseStateSplit';
+import UseReducerSplit from './pages/UseStateSplit';
+import Splitter from './pages/Splitter';
+import Layout from './UI/Layout.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+
+
+      <Switch>
+        <Route path="/usestate">
+          <UseStateSplit/>
+        </Route>
+        <Route path="/usereducer">
+          <UseReducerSplit/>
+        </Route>
+        <Route path="/split">
+          <Splitter/>
+        </Route>
+        <Route path="*">
+          <Redirect to="/usestate"/>
+        </Route>
+      </Switch>
+    </Layout>
   );
 }
 
