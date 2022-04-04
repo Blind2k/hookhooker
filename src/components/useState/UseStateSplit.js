@@ -38,7 +38,7 @@ export default UsingState;`
    return (
       <Fragment>
          <h1 className="stateheader">use state to change one thing in the virtual Dom</h1>
-            <div className="top">
+            <div className="top centered">
                <UsingState/>
             </div>
             <div className="bottom">

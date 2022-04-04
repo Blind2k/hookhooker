@@ -16,7 +16,7 @@ const UsingState = () => {
       <div>
          {counter}
          <button onClick={addCounterHandler}>Press me</button>
-         <br />
+         <br/>
          <label htmlFor="name">Name: </label>
          <input id="name" placeholder="Change here" onChange={addNameHandler}/>
          {name}

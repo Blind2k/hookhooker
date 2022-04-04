@@ -1,38 +1,23 @@
 import React, { Fragment } from "react";
-import UsingReducer from "./UsingEffect";
+import UsingEffect from "./UsingEffect";
 import UseDisplay from "../../hooks/useDisplay";
 
 const UseReducerSplit = () => {
-   const useStateCode = `import React, { Fragment, useEffect, useState } from "react";
-
-   const UsingEffect = () => {
-      const [button, buttonFunction] = useState(false);
-   
+   const useStateCode = 
+   `const UsingEffect = () => {
       useEffect(() => {
-         if (button) {
-            alert('Clicking the button reinitiate the time point');
-         } else return;
-      }, [button]);
+         alert('You came, this is my time to shine');
+      }, []);
    
-      const connectButtonFunction = () => {
-         buttonFunction(!button);
-      };
-   
-      return (
-         <Fragment>
-            <h1>Hello</h1>
-            <button onClick={connectButtonFunction}>is this a pointless button?</button>
-         </Fragment>
-      );
+      return <h4>Refresh the page to create a time point that some effect should happen</h4>
    };
-   export default UsingEffect;
-   `.trim();
+   export default UsingEffect;`.trim();
 
    return (
       <Fragment>
          <h1 className="stateheader">use effect to set check-points when to change the virtual Dom</h1>
-         <div className="top">
-            <UsingReducer />
+         <div className="top centered">
+            <UsingEffect />
          </div>
          <div className="bottom">
             <UseDisplay exampleCode={useStateCode} />

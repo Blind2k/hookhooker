@@ -11,7 +11,7 @@ const Layout = props => {
             <MiniNavbar />
             {props.children}
          </main>
-         <Particles/>
+         {/* <Particles/> */}
       </div>
    );
 };

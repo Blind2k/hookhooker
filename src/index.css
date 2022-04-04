@@ -36,9 +36,9 @@ body {
 
 .thescreen {
   height: 100vh;
-  /* width: 100vw; */
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 main {
@@ -89,26 +89,26 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.3em;
+    height: 1.6em;
+    background-color: #e0e0e0;
+  }
+
+  .top {
+    height: 60px;
   }
 }
 
 /* OUTSIDE MAIN */
 .stateheader {
-  /* display: flex; */
-  /* justify-content: center; */
   font-size: large;
   text-align: center;
   background-color: #818181;
-  /* padding-left: 14px; */
 }
 
 .top {
-  /* display: grid; */
-  /* justify-content: center; */
+  height: fit-content;
+  min-height: 100px;
   border: black 2px solid;
-  /* padding-bottom: 2em; */
-  /* padding-top: 1em; */
   align-items: baseline;
   background-color: #dddddd;
   box-shadow: inset;
@@ -117,4 +117,10 @@ main {
 .activenavigation {
   color: #f1f1f1;
   border-right: 20px #818181 solid ;
+}
+
+.centered {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

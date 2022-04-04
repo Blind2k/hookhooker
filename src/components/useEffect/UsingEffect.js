@@ -1,25 +1,15 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 const UsingEffect = () => {
-   const [button, buttonFunction] = useState(null);
+   let test = 0;
 
    useEffect(() => {
-      if (!button) {
-         return;
-      } else 
-      return;
-      alert('Clicking the button reinitiate the time point');
-   }, [button]);
+      test++;
+      console.log(test);
+   }, []);
 
-   const connectButtonFunction = () => {
-      buttonFunction(!button);
-   };
+   console.log(test);
 
-   return (
-      <Fragment>
-         <h1>Hello</h1>
-         <button onClick={connectButtonFunction}>is this a pointless button?</button>
-      </Fragment>
-   );
+   return <h4>{test === 0 ? "Empty" : "Not empty"}</h4>
 };
 export default UsingEffect;

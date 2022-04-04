@@ -40,7 +40,7 @@ const UseReducerSplit = () => {
    return (
       <Fragment>
          <h1 className="stateheader">use reducer to change more than one thing in the virtual Dom</h1>
-         <div className="top">
+         <div className="top centered">
             <UsingReducer />
          </div>
          <div className="bottom">
