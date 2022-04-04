@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hookhooker/static/css/main.4de4aaee.css",
+    "main.js": "/hookhooker/static/js/main.92d7a910.js",
+    "index.html": "/hookhooker/index.html",
+    "main.4de4aaee.css.map": "/hookhooker/static/css/main.4de4aaee.css.map",
+    "main.92d7a910.js.map": "/hookhooker/static/js/main.92d7a910.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4de4aaee.css",
+    "static/js/main.92d7a910.js"
+  ]
+}
