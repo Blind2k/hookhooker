@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect } from "react";
+import { useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 
 const MiniNavigation = () => {
@@ -11,7 +11,6 @@ const MiniNavigation = () => {
       setDestination(event.target.value);
       history.push(`/${theDestination}`);
    };
-   console.log(location.pathname);
 
    const hasChoosen = theDestination ? theDestination : location.pathname;
 

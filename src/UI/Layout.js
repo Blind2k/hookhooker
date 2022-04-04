@@ -1,6 +1,7 @@
 import React from "react";
 import NavigationBar from "./NavigationBar.js";
 import MiniNavbar from "./MiniNavigation.js";
+import Particles from "../UI/Particles";
 
 const Layout = props => {
    return (
@@ -10,6 +11,7 @@ const Layout = props => {
             <MiniNavbar />
             {props.children}
          </main>
+         <Particles/>
       </div>
    );
 };

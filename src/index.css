@@ -29,19 +29,16 @@ footer, header, hgroup, menu, nav, section {
   display: none;
 }
 
-/* VARIABLES */
-
-
 /* NORMAL TAGS */
 body {
  font-family: "Lato", sans-serif;
- /* back */
 }
 
 .thescreen {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
+  justify-content: space-around;
 }
 
 main {
