@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const UsingState = () => {
    const [counter, addCounter] = useState(0);
-   const [name, addName] = useState("Pedro");
+   const [name, addName] = useState("Change me");
 
    const addCounterHandler = () => {
       addCounter(counter + 1);
@@ -15,10 +15,10 @@ const UsingState = () => {
    return (
       <div>
          {counter}
-         <button onClick={addCounterHandler}>+1</button>
+         <button onClick={addCounterHandler}>Press me</button>
          <br />
-         <label id="name">Name: </label>
-         <input id="name" placeholder="Write here" onChange={addNameHandler}/>
+         <label htmlFor="name">Name: </label>
+         <input id="name" placeholder="Change here" onChange={addNameHandler}/>
          {name}
       </div>
    );

@@ -5,6 +5,7 @@ const NavigationBar = () => {
       <div className="sidenav">
          <NavLink activeClassName="activenavigation" to="/usestate">useState</NavLink>
          <NavLink activeClassName="activenavigation" to="/usereducer">useReducer</NavLink>
+         <NavLink activeClassName="activenavigation" to="/useeffect">useEffect</NavLink>
          <NavLink activeClassName="activenavigation" to="/split">split</NavLink>
       </div>
    )
